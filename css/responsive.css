@@ -166,6 +166,31 @@
         grid-template-columns: 1fr;
     }
 
+    /* 指导老师 - 平板 */
+    .advisor-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .advisor-photo-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    .advisor-name {
+        font-size: 24px;
+    }
+
+    .advisor-info {
+        width: 100%;
+    }
+
+    .advisor-areas {
+        justify-content: center;
+    }
+
     /* 时间线 */
     .timeline::before {
         left: 20px;
@@ -185,14 +210,92 @@
         grid-template-columns: 1fr;
     }
 
-    /* 成员网格 */
+    /* 会员网格 */
     .members-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 260px);
+    }
+
+    /* 优秀成果时间线 */
+    .achievements-timeline::before {
+        left: 20px;
+    }
+
+    .achievement-item {
+        flex-direction: column;
+    }
+
+    .achievement-date {
+        width: auto;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 50px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    .achievement-date-month-cn {
+        font-size: 16px;
+    }
+
+    .achievement-date-month-en {
+        font-size: 10px;
+    }
+
+    .achievement-date-year {
+        font-size: 16px;
+    }
+
+    .achievement-dot {
+        left: 11px;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        border-width: 3px;
+    }
+
+    .achievement-content {
+        margin-left: 50px;
+        padding: 18px 20px;
+    }
+
+    .achievement-content::before {
+        left: -8px;
+        top: 10px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid var(--bg-white);
+    }
+
+    .achievement-title {
+        font-size: 17px;
+    }
+
+    .achievement-desc {
+        font-size: 14px;
     }
 
     /* 加入我们 */
     .contact-card {
         padding: 30px 20px;
+    }
+
+    /* 招新报名网格 */
+    .join-contact-grid {
+        gap: 16px;
+    }
+
+    .join-contact-grid .join-contact-card {
+        width: 200px;
+    }
+
+    .join-contact-card {
+        padding: 20px 16px;
+    }
+
+    .join-contact-icon {
+        font-size: 28px;
     }
 
     /* 联系表单 */
@@ -204,13 +307,9 @@
 
 /* 小屏手机 */
 @media (max-width: 480px) {
-    .logo span {
-        font-size: 20px;
-    }
-
     .logo img {
-        width: 32px;
-        height: 32px;
+        height: 36px;
+        width: auto;
     }
 
     .hero-title {
@@ -257,12 +356,33 @@
         padding: 25px 20px;
     }
 
+    /* 会员网格 - 小屏单列 */
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
     .page-title {
         font-size: 28px;
     }
 
     .contact-item-value {
         font-size: 16px;
+    }
+
+    /* 招新报名网格 - 小屏 */
+    .join-contact-grid {
+        gap: 12px;
+    }
+
+    .join-contact-grid .join-contact-card {
+        width: 160px;
+    }
+
+    /* 招新状态提示横幅 */
+    .join-notice-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
 }
 

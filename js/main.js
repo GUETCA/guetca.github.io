@@ -118,37 +118,63 @@ if (contactForm) {
 
 // 返回顶部按钮
 const backToTopBtn = document.createElement('button');
-backToTopBtn.innerHTML = '↑';
+backToTopBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>';
 backToTopBtn.className = 'back-to-top';
 backToTopBtn.style.cssText = `
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
     background: var(--primary-color);
     color: white;
     border: none;
-    font-size: 20px;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 95, 165, 0.3);
     z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 document.body.appendChild(backToTopBtn);
 
+let isScrollingUp = false;
+let hideTimeout = null;
+let lastScrollTop = 0;
+
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 300) {
-        backToTopBtn.style.opacity = '1';
-        backToTopBtn.style.visibility = 'visible';
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScrollTop > 300) {
+        if (currentScrollTop < lastScrollTop) {
+            isScrollingUp = true;
+            backToTopBtn.style.opacity = '1';
+            backToTopBtn.style.visibility = 'visible';
+            backToTopBtn.style.transform = 'translateY(0)';
+        } else {
+            isScrollingUp = false;
+            backToTopBtn.style.opacity = '0';
+            backToTopBtn.style.visibility = 'hidden';
+        }
+        
+        if (hideTimeout) clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+            if (!isScrollingUp && currentScrollTop > 300) {
+                backToTopBtn.style.opacity = '0';
+                backToTopBtn.style.visibility = 'hidden';
+            }
+        }, 2000);
     } else {
         backToTopBtn.style.opacity = '0';
         backToTopBtn.style.visibility = 'hidden';
     }
+    
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
 });
 
 backToTopBtn.addEventListener('click', () => {

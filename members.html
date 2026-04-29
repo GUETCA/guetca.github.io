@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>成员风采 - 桂林电子科技大学密码协会</title>
+    <title>会员风采 - 桂林电子科技大学密码协会</title>
+    <link rel="icon" href="static/guetca-logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -13,15 +14,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="static/guetca-logo.png" alt="GUETCA Logo">
-                    <span>GUETCA</span>
+                    <img src="static/guetca-title.png" alt="GUETCA Logo">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">首页</a></li>
                     <li><a href="about.html">关于我们</a></li>
                     <li><a href="activities.html">活动天地</a></li>
                     <li><a href="resources.html">学习资源</a></li>
-                    <li><a href="members.html" class="active">成员风采</a></li>
+                    <li><a href="members.html" class="active">会员风采</a></li>
                     <li><a href="join.html">加入我们</a></li>
                     <li><a href="contact.html">联系我们</a></li>
                 </ul>
@@ -38,52 +38,26 @@
         <!-- 页面头部 -->
         <section class="page-header">
             <div class="container">
-                <h1 class="page-title">成员风采</h1>
-                <p class="page-subtitle">认识协会的优秀成员</p>
+                <h1 class="page-title">会员风采</h1>
+                <p class="page-subtitle">认识协会的优秀会员</p>
             </div>
         </section>
 
-        <!-- 核心成员 -->
+        <!-- 核心会员 -->
         <section class="content-section section-white">
             <div class="container">
-                <h2 class="section-title">核心成员</h2>
-                <div class="members-grid">
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">会长</p>
-                        <p class="member-bio">（会长介绍将在后续完善）</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">副会长</p>
-                        <p class="member-bio">（副会长介绍将在后续完善）</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">技术部部长</p>
-                        <p class="member-bio">（部长介绍将在后续完善）</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">活动部部长</p>
-                        <p class="member-bio">（部长介绍将在后续完善）</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">宣传部部长</p>
-                        <p class="member-bio">（部长介绍将在后续完善）</p>
-                    </div>
-                    <div class="member-card">
-                        <div class="member-avatar">👤</div>
-                        <h3 class="member-name">待补充</h3>
-                        <p class="member-role">外联部部长</p>
-                        <p class="member-bio">（部长介绍将在后续完善）</p>
-                    </div>
+                <h2 class="section-title">核心会员</h2>
+                <div class="members-grid" id="membersGrid">
+                    <a href="index.html" target="_blank" class="member-card member-card-link">
+                        <div class="member-avatar">
+                            <img src="static/guetca-logo.png" alt="密码协会" class="avatar-img" onerror="this.parentElement.innerHTML='👤'">
+                        </div>
+                        <h3 class="member-name">密码协会</h3>
+                        <p class="member-grade">2025级</p>
+                        <p class="member-field">密码学与信息安全</p>
+                        <p class="member-bio">为会员提供一个学习交流密码学与信息安全的平台</p>
+                        <span class="member-link-hint">点击访问 →</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -91,32 +65,20 @@
         <!-- 优秀成果 -->
         <section class="content-section section-gray">
             <div class="container">
-                <h2 class="section-title">优秀成果展示</h2>
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <p style="color: var(--text-light); margin-bottom: 30px;">
-                        （优秀成果展示将在后续完善，包括竞赛获奖、论文发表、项目成果等）
-                    </p>
-                    <div style="background: var(--bg-white); padding: 40px; border-radius: 12px;">
-                        <p style="font-size: 48px; margin-bottom: 20px;">🏆</p>
-                        <h3 style="margin-bottom: 15px;">竞赛获奖</h3>
-                        <p style="color: var(--text-light);">（待补充）</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 校友追踪 -->
-        <section class="content-section section-white">
-            <div class="container">
-                <h2 class="section-title">校友追踪</h2>
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    <p style="color: var(--text-light); margin-bottom: 30px;">
-                        （优秀校友将在后续补充，展示协会成员毕业后的成就和发展）
-                    </p>
-                    <div style="background: var(--bg-gray); padding: 40px; border-radius: 12px;">
-                        <p style="font-size: 48px; margin-bottom: 20px;">🎓</p>
-                        <h3 style="margin-bottom: 15px">优秀校友</h3>
-                        <p style="color: var(--text-light);">（待补充）</p>
+                <h2 class="section-title">优秀成果</h2>
+                <div class="achievements-timeline" id="achievementsTimeline">
+                    <div class="achievement-item">
+                        <div class="achievement-date">
+                            <div class="achievement-date-month-cn">11月</div>
+                            <div class="achievement-date-month-en">Nov</div>
+                            <div class="achievement-date-year">2025</div>
+                        </div>
+                        <div class="achievement-dot"></div>
+                        <div class="achievement-content">
+                            <h3 class="achievement-title">第十届全国密码技术竞赛二等奖</h3>
+                            <p class="achievement-desc">协会会员组成的队伍在全国密码技术竞赛中获得二等奖，展现了扎实的密码学功底。</p>
+                            <a href="https://mp.weixin.qq.com/s/zLG5LLAwcaJQsj8EflvBAA" class="achievement-link" target="_blank">查看详情</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -128,30 +90,34 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于协会</h4>
-                    <p>桂林电子科技大学密码协会</p>
-                    <p>计算机与信息安全学院</p>
-                    <p>学术科技类学生社团</p>
+                    <h4>快速链接</h4>
+                    <ul class="footer-links" id="footerCol1Links">
+                            <li><a href="index.html">桂林电子科技大学密码协会</a></li>
+                            <li><a href="https://www.guet.edu.cn/tw">共青团桂林电子科技大学委员会</a></li>
+                            <li><a href="https://www.guet.edu.cn/dept3">计算机与信息安全学院/密码学院</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="activities.html">活动天地</a></li>
-                        <li><a href="resources.html">学习资源</a></li>
-                        <li><a href="join.html">加入我们</a></li>
+                    <h4>关于协会</h4>
+                    <ul class="footer-links" id="footerCol2Links">
+                            <li><a href="activities.html">活动天地</a></li>
+                            <li><a href="resources.html">学习资源</a></li>
+                            <li><a href="members.html">会员风采</a></li>
+                            <li><a href="join.html">加入我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>联系我们</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">联系方式</a></li>
-                        <li><a href="https://guetca.github.io/" target="_blank">GitHub</a></li>
+                    <ul class="footer-links" id="footerCol3Links">
+                            <li><a href="contact.html">联系方式</a></li>
+                        <li><a href="https://github.com/GUETCA" class="footer-github" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.52 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 桂林电子科技大学密码协会. All rights reserved.</p>
+                <p id="footerCopyright">&copy; 2025-2028 桂林电子科技大学密码协会. All rights reserved.</p>
             </div>
         </div>
     </footer>

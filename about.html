@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我们 - 桂林电子科技大学密码协会</title>
+    <link rel="icon" href="static/guetca-logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -13,15 +14,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="static/guetca-logo.png" alt="GUETCA Logo">
-                    <span>GUETCA</span>
+                    <img src="static/guetca-title.png" alt="GUETCA Logo">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">首页</a></li>
                     <li><a href="about.html" class="active">关于我们</a></li>
                     <li><a href="activities.html">活动天地</a></li>
                     <li><a href="resources.html">学习资源</a></li>
-                    <li><a href="members.html">成员风采</a></li>
+                    <li><a href="members.html">会员风采</a></li>
                     <li><a href="join.html">加入我们</a></li>
                     <li><a href="contact.html">联系我们</a></li>
                 </ul>
@@ -39,63 +39,110 @@
         <section class="page-header">
             <div class="container">
                 <h1 class="page-title">关于我们</h1>
-                <p class="page-subtitle">了解桂林电子科技大学密码协会的历史与使命</p>
+                <p class="page-subtitle">桂林电子科技大学密码协会，简称GUETCA</p>
             </div>
         </section>
 
         <!-- 协会介绍 -->
         <section class="content-section section-white">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>协会简介</h3>
-                        <p>桂林电子科技大学密码协会（GUET Cryptography Association，简称GUETCA）成立于2025年10月21日，是挂靠于计算机与信息安全学院的学术科技类学生社团。</p>
-                        <p>协会致力于为对密码学和网络安全感兴趣的同学提供一个学习、交流和实践的平台。我们相信，通过系统的学习、丰富的实践和深入的交流，每一位成员都能在密码学领域有所收获。</p>
-                        <p>自成立以来，协会已成功举办多场密码学讲座、CTF竞赛和学术沙龙活动，吸引了众多同学的参与和关注。</p>
-                    </div>
-                    <div class="about-text">
-                        <h3>指导单位</h3>
-                        <p><strong>挂靠单位：</strong>计算机与信息安全学院</p>
-                        <p><strong>成立时间：</strong>2025年10月21日</p>
-                        <p><strong>社团性质：</strong>学术科技类学生社团</p>
-                        <p><strong>英文名称：</strong>GUET Cryptography Association</p>
+                <div class="about-content" id="aboutContent">
+                    <div class="about-text full-width">
+                        桂林电子科技大学密码协会（Guilin University of Electronic Technology Cryptography Association）是由计算机与信息安全学院发起成立的学术科技类学生社团。协会致力于推广密码学知识，培养信息安全人才，为同学们提供一个学习交流密码学与信息安全的平台。我们相信，通过系统的学习和实践，每位会员都能在这里找到属于自己的成长之路。
                     </div>
                 </div>
 
                 <!-- 使命愿景价值观 -->
-                <div class="mission-values">
+                <div class="mission-values" id="missionValues">
                     <div class="mission-card">
-                        <h4>协会宗旨</h4>
-                        <p>探索密码学奥秘，培养网络安全人才，搭建学术交流平台</p>
+                        <h4>🎯 学术为本</h4>
+                        <p>以学术研究为核心，注重理论与实践结合</p>
                     </div>
                     <div class="mission-card">
-                        <h4>发展目标</h4>
-                        <p>成为校内知名的学术社团，为成员提供专业、系统的学习资源</p>
+                        <h4>🤝 开放协作</h4>
+                        <p>倡导开放共享，欢迎所有热爱技术的同学</p>
                     </div>
                     <div class="mission-card">
-                        <h4>愿景展望</h4>
-                        <p>推动密码学知识普及，为网络安全事业发展贡献力量</p>
+                        <h4>🚀 持续成长</h4>
+                        <p>与会员共同成长，追求技术卓越</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 组织架构 -->
+        <!-- 指导老师 -->
+        <section class="content-section section-white">
+            <div class="container">
+                <h2 class="section-title">指导老师</h2>
+                <div class="advisor-section" id="advisorSection">
+                    <div class="advisor-card">
+                        <div class="advisor-photo-wrapper">
+                            <img src="uploads/images/llc.jpg" alt="李灵琛" class="advisor-photo">
+                        </div>
+                        <div class="advisor-info">
+                            <h3 class="advisor-name">李灵琛</h3>
+                            <p class="advisor-title">计算机与信息安全学院</p>
+                            <p class="advisor-bio">从事对称密码算法的设计、分析及实现相关领域的研究工作，主要包括对称密码自动化分析、对称密码人工智能分析、对称密码抗量子安全性评估等。主持国家自然科学积极、广西青年基金、广西人才专项基金、横向项目等。</p>
+                            <div class="advisor-areas">
+                                <span class="area-label">研究方向：</span>
+                                <span class="area-tag">密码算法设计</span>
+                                <span class="area-tag">密码算法分析</span>
+                            </div>
+                        </div>
+</div>                </div>
+            </div>
+        </section>
+
+                <!-- 组织架构 -->
         <section class="content-section section-gray">
             <div class="container">
                 <h2 class="section-title">组织架构</h2>
-                <div class="organization-chart">
-                    <div class="org-chart">
-                        <div class="org-node">会长</div>
-                        <div class="org-node">副会长</div>
-                        <div class="org-node">技术部</div>
-                        <div class="org-node">活动部</div>
-                        <div class="org-node">宣传部</div>
-                        <div class="org-node">外联部</div>
+                <p class="section-intro">桂林电子科技大学密码协会采用理事会领导下的部门负责制，下设执行委员会、学术部、科技部三个职能部门，各部门通力合作，共同推动协会发展。</p>
+                <div class="org-chart" id="orgChart">
+                    <div class="org-card">
+                        <div class="org-card-header">
+                            <span class="org-icon">⭐</span>
+                            <h3 class="org-name">理事会</h3>
+                        </div>
+                        <p class="org-desc">协会最高决策机构，负责顶层设计、方向把控与组织治理，确保协会的长期健康发展</p>
+                        <div class="org-positions">
+                            <span class="org-position">会长 1名</span>
+                            <span class="org-position">副会长 2名</span>
+                        </div>
                     </div>
-                </div>
-                <div style="margin-top: 40px; text-align: center;">
-                    <p style="color: var(--text-light);">（详细组织架构和成员介绍将在后续完善）</p>
+                    <div class="org-card">
+                        <div class="org-card-header">
+                            <span class="org-icon">👥</span>
+                            <h3 class="org-name">执行委员会</h3>
+                        </div>
+                        <p class="org-desc">负责将理事会制定的发展战略转化为具体行动，确保日常运作与活动落地</p>
+                        <div class="org-positions">
+                            <span class="org-position">正副委员长 2名</span>
+                            <span class="org-position">委员 6名</span>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-card-header">
+                            <span class="org-icon">📚</span>
+                            <h3 class="org-name">学术部</h3>
+                        </div>
+                        <p class="org-desc">组织学术讲座、技术分享会与学习交流活动</p>
+                        <div class="org-positions">
+                            <span class="org-position">部长 1名</span>
+                            <span class="org-position">学术骨干若干</span>
+                        </div>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-card-header">
+                            <span class="org-icon">💻</span>
+                            <h3 class="org-name">技术部</h3>
+                        </div>
+                        <p class="org-desc">负责密码学技术研究、CTF竞赛训练与工具开发</p>
+                        <div class="org-positions">
+                            <span class="org-position">部长 1名</span>
+                            <span class="org-position">技术骨干若干</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -104,17 +151,154 @@
         <section class="content-section section-white">
             <div class="container">
                 <h2 class="section-title">协会章程</h2>
-                <div style="max-width: 800px; margin: 0 auto;">
-                    <div style="background: var(--bg-gray); padding: 40px; border-radius: 12px;">
-                        <p style="margin-bottom: 20px; color: var(--text-light);">（协会章程全文将在后续完善，包括总则、组织机构、会员权利义务、经费管理等内容）</p>
-                        <ul style="color: var(--text-light); line-height: 2;">
-                            <li>第一章 总则</li>
-                            <li>第二章 会员</li>
-                            <li>第三章 组织机构</li>
-                            <li>第四章 活动管理</li>
-                            <li>第五章 财务管理</li>
-                            <li>第六章 附则</li>
-                        </ul>
+                <div class="constitution-content" id="constitutionContent">
+                    <div class="chapter">
+                        <h3 class="chapter-title">第一章 总 则</h3>
+                        <div class="article">
+                            <span class="article-number">第一条</span>
+                            <span class="article-content">为规范桂林电子科技大学密码协会的组织与行为，保障协会健康发展，繁荣校园科技文化，根据《桂林电子科技大学学生社团管理暂行办法》及相关规定，制定本章程。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二条</span>
+                            <span class="article-content">本协会名称为桂林电子科技大学密码协会。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第三条</span>
+                            <span class="article-content">本协会是在桂林电子科技大学团委及计算机与信息安全学院指导下，由在校学生自愿组成的学术科技类学生社团。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第四条</span>
+                            <span class="article-content">本协会宗旨为普及密码学知识，提升会员信息安全素养、创新思维与实践能力，营造探索、严谨、协作的学术氛围，服务学校密码与网络安全领域专业人才培养。社团致力于通过学术研讨、技术实践和竞赛活动，推动密码学在校内的研究与发展。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第五条</span>
+                            <span class="article-content">本协会接受桂林电子科技大学团委的监督管理和业务指导和计算机与信息安全学院的管理和指导。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第二章 业务范围</h3>
+                        <div class="article">
+                            <span class="article-number">第六条</span>
+                            <span class="article-content">本协会的业务范围包括：<br>（一）组织密码学、信息安全、网络空间安全等相关领域的学术讲座、技术培训与学习分享会；<br>（二）举办校内的密码学知识竞赛、CTF技能赛、创新实践项目等活动；<br>（三）开展与密码学相关的科普宣传，提升全校师生的信息安全意识；<br>（四）组织会员参加国家级、省（区）级相关学科竞赛，并提供必要的学习与训练支持；<br>（五）完成指导单位交办的其他相关工作。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第三章 会 员</h3>
+                        <div class="article">
+                            <span class="article-number">第七条</span>
+                            <span class="article-content">凡承认本章程，对密码学、信息安全有兴趣的桂林电子科技大学在校本科生，均可申请加入。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第八条</span>
+                            <span class="article-content">会员入会需按协会规定的程序办理手续，具体细则由《桂林电子科技大学密码协会会员管理办法》规定。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第九条</span>
+                            <span class="article-content">会员享有下列权利：<br>（一）参加本协会的各项活动；<br>（二）获得本协会服务的优先权；<br>（三）拥有协会内部的选举权、被选举权和表决权；<br>（四）对本协会工作的批评建议权和监督权；<br>（五）入会自愿、退会自由。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十条</span>
+                            <span class="article-content">会员履行下列义务：<br>（一）遵守国家法律法规、校规校纪及本章程；<br>（二）维护本协会的声誉和合法权益；<br>（三）执行本协会的决议；<br>（四）积极参与协会活动；<br>（五）完成协会委托的任务。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十一条</span>
+                            <span class="article-content">会员退会需要通知协会。会员如有严重违反本章程或学校纪律的行为，经理事会表决通过，予以除名。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第四章 组织机构和负责人产生、罢免</h3>
+                        <div class="article">
+                            <span class="article-number">第十二条</span>
+                            <span class="article-content">本协会的最高权力机构是会员大会，其职权是：<br>（一）制定和修改章程；<br>（二）选举和罢免理事会会员；<br>（三）审议理事会的工作报告；<br>（四）决定协会的工作方针、任务及终止事宜；<br>（五）决定其他重大事宜。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十三条</span>
+                            <span class="article-content">会员大会每年至少召开一次，须有三分之二以上的会员出席方能召开，其决议须经到会会员半数以上表决通过方能生效。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十四条</span>
+                            <span class="article-content">理事会是会员大会的执行机构，在闭会期间领导本协会开展日常工作，对会员大会负责。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十五条</span>
+                            <span class="article-content">理事会的职权是：<br>（一）执行会员大会的决议；<br>（二）筹备召开会员大会；<br>（三）向会员大会报告工作状况；<br>（四）决定会员的吸收和除名；<br>（五）决定设立办事机构、分支机构；<br>（六）领导本协会各机构开展工作；<br>（七）制定内部管理制度；<br>（八）决定其他重大事项。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十六条</span>
+                            <span class="article-content">理事会选举产生会长一名、副会长若干名。协会负责人须符合学校社团负责人管理办法规定的任职条件。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十七条</span>
+                            <span class="article-content">本协会的会长、副会长必须具备下列条件：<br>（一）政治立场坚定，遵守校纪校规；<br>（二）在本协会业务领域内有较大影响力，熟悉社团工作；<br>（三）具有完全民事行为能力，学业良好，能正常履行职责。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第十八条</span>
+                            <span class="article-content">本协会会长行使下列职权：<br>（一）召集和主持理事会；<br>（二）检查会员大会、理事会决议的落实情况；<br>（三）代表本协会签署有关重要文件。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第五章 资产管理、使用原则</h3>
+                        <div class="article">
+                            <span class="article-number">第十九条</span>
+                            <span class="article-content">按照学校相关规定，本协会主要经费应来自学校拨款，原则上不接受校外资助，不收取会员会费。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十条</span>
+                            <span class="article-content">本协会经费必须用于本章程规定的业务范围和事业的发展。任何单位、个人不得侵占、私分和挪用。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十一条</span>
+                            <span class="article-content">本协会建立严格的财务管理制度，保证会计资料合法、真实、准确、完整。协会资产管理接受会员大会和指导单位的监督。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第六章 章程的修改程序</h3>
+                        <div class="article">
+                            <span class="article-number">第二十二条</span>
+                            <span class="article-content">对本协会章程的修改，须经理事会表决通过后报会员大会审议。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十三条</span>
+                            <span class="article-content">本协会修改的章程，须在会员大会通过后15日内，经指导单位审查同意后生效。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第七章 终止程序及终止后的财产处理</h3>
+                        <div class="article">
+                            <span class="article-number">第二十四条</span>
+                            <span class="article-content">本协会因完成宗旨、自行解散或分立、合并等原因需要注销的，由理事会提出终止动议。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十五条</span>
+                            <span class="article-content">本协会终止动议须经会员大会表决通过，并报指导单位审查同意。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十六条</span>
+                            <span class="article-content">本协会终止前，须在指导单位及有关机关指导下成立清算组织，清理债权债务，处理善后事宜。清算期间，不开展清算以外的活动。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十七条</span>
+                            <span class="article-content">本协会经桂林电子科技大学团委办理注销登记手续后即为终止。终止后的剩余财产，在指导单位的监督下，按照学校有关规定处理。</span>
+                        </div>
+                    </div>
+                    <div class="chapter">
+                        <h3 class="chapter-title">第八章 附 则</h3>
+                        <div class="article">
+                            <span class="article-number">第二十八条</span>
+                            <span class="article-content">本协会的会旗为密字旗，会徽为密字徽。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第二十九条</span>
+                            <span class="article-content">本章程的解释权属桂林电子科技大学密码协会理事会。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第三十条</span>
+                            <span class="article-content">成立初期特别规定：由于本协会成立不久，考虑协会实际情况，在成立初期：<br>（一）协会的日常决策与工作，由理事会全权负责。<br>（二）本应由会员大会行使的职权，可委托由创始骨干会员召开的会议行使，其决议视同会员大会决议。<br>（三）协会发展成熟后，应严格按本章程第十二条至第十四条规定，召开正式的年度会员大会。</span>
+                        </div>
+                        <div class="article">
+                            <span class="article-number">第三十一条</span>
+                            <span class="article-content">本章程自公布之日起生效，试行期一年。试行期间，可根据实际情况依法修订。</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,30 +310,34 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于协会</h4>
-                    <p>桂林电子科技大学密码协会</p>
-                    <p>计算机与信息安全学院</p>
-                    <p>学术科技类学生社团</p>
+                    <h4>快速链接</h4>
+                    <ul class="footer-links" id="footerCol1Links">
+                            <li><a href="index.html">桂林电子科技大学密码协会</a></li>
+                            <li><a href="https://www.guet.edu.cn/tw">共青团桂林电子科技大学委员会</a></li>
+                            <li><a href="https://www.guet.edu.cn/dept3">计算机与信息安全学院/密码学院</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="activities.html">活动天地</a></li>
-                        <li><a href="resources.html">学习资源</a></li>
-                        <li><a href="join.html">加入我们</a></li>
+                    <h4>关于协会</h4>
+                    <ul class="footer-links" id="footerCol2Links">
+                            <li><a href="activities.html">活动天地</a></li>
+                            <li><a href="resources.html">学习资源</a></li>
+                            <li><a href="members.html">会员风采</a></li>
+                            <li><a href="join.html">加入我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>联系我们</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">联系方式</a></li>
-                        <li><a href="https://guetca.github.io/" target="_blank">GitHub</a></li>
+                    <ul class="footer-links" id="footerCol3Links">
+                            <li><a href="contact.html">联系方式</a></li>
+                        <li><a href="https://github.com/GUETCA" class="footer-github" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 桂林电子科技大学密码协会. All rights reserved.</p>
+                <p id="footerCopyright">&copy; 2025-2028 桂林电子科技大学密码协会. All rights reserved.</p>
             </div>
         </div>
     </footer>

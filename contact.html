@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>联系我们 - 桂林电子科技大学密码协会</title>
+    <link rel="icon" href="static/guetca-logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -13,15 +14,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="static/guetca-logo.png" alt="GUETCA Logo">
-                    <span>GUETCA</span>
+                    <img src="static/guetca-title.png" alt="GUETCA Logo">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">首页</a></li>
                     <li><a href="about.html">关于我们</a></li>
                     <li><a href="activities.html">活动天地</a></li>
                     <li><a href="resources.html">学习资源</a></li>
-                    <li><a href="members.html">成员风采</a></li>
+                    <li><a href="members.html">会员风采</a></li>
                     <li><a href="join.html">加入我们</a></li>
                     <li><a href="contact.html" class="active">联系我们</a></li>
                 </ul>
@@ -48,56 +48,31 @@
             <div class="container">
                 <h2 class="section-title">联系方式</h2>
                 <div class="contact-grid">
-                    <div class="contact-info">
+                    <div class="contact-info" id="contactInfo">
                         <div class="info-item">
                             <h4>官方QQ群</h4>
-                            <p>待补充</p>
+                            <p>915878345</p>
                             <p>群内可以咨询招新、活动等相关问题</p>
                         </div>
                         <div class="info-item">
                             <h4>微信公众号</h4>
-                            <p>待补充</p>
+                            <p>GUETCA</p>
                             <p>关注公众号获取最新活动资讯</p>
                         </div>
                         <div class="info-item">
                             <h4>邮箱地址</h4>
-                            <p>guetca@example.com</p>
+                            <p><a href="mailto:guetca@163.com" style="color: var(--primary-color);">guetca@163.com</a></p>
                             <p>发送邮件联系我们</p>
                         </div>
                         <div class="info-item">
                             <h4>办公地点</h4>
-                            <p>计算机与信息安全学院</p>
-                            <p>具体位置待补充</p>
+                            <p>桂林电子科技大学（花江校区）</p>
                         </div>
                         <div class="info-item">
                             <h4>GitHub</h4>
-                            <p><a href="https://guetca.github.io/" target="_blank" style="color: var(--primary-color);">https://guetca.github.io/</a></p>
+                            <p><a href="https://github.com/GUETCA" target="_blank" style="color: var(--primary-color);">https://github.com/GUETCA</a></p>
                             <p>查看我们的开源项目和资源</p>
                         </div>
-                    </div>
-
-                    <!-- 留言表单 -->
-                    <div class="contact-form">
-                        <h3 style="margin-bottom: 25px;">给我们留言</h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">姓名 *</label>
-                                <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">邮箱 *</label>
-                                <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">主题</label>
-                                <input type="text" id="subject" name="subject" placeholder="留言主题">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">留言内容 *</label>
-                                <textarea id="message" name="message" placeholder="请输入您的留言内容" required></textarea>
-                            </div>
-                            <button type="submit" class="submit-btn">提交留言</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -109,30 +84,34 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于协会</h4>
-                    <p>桂林电子科技大学密码协会</p>
-                    <p>计算机与信息安全学院</p>
-                    <p>学术科技类学生社团</p>
+                    <h4>快速链接</h4>
+                    <ul class="footer-links" id="footerCol1Links">
+                            <li><a href="index.html">桂林电子科技大学密码协会</a></li>
+                            <li><a href="https://www.guet.edu.cn/tw">共青团桂林电子科技大学委员会</a></li>
+                            <li><a href="https://www.guet.edu.cn/dept3">计算机与信息安全学院/密码学院</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="activities.html">活动天地</a></li>
-                        <li><a href="resources.html">学习资源</a></li>
-                        <li><a href="join.html">加入我们</a></li>
+                    <h4>关于协会</h4>
+                    <ul class="footer-links" id="footerCol2Links">
+                            <li><a href="activities.html">活动天地</a></li>
+                            <li><a href="resources.html">学习资源</a></li>
+                            <li><a href="members.html">会员风采</a></li>
+                            <li><a href="join.html">加入我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>联系我们</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">联系方式</a></li>
-                        <li><a href="https://guetca.github.io/" target="_blank">GitHub</a></li>
+                    <ul class="footer-links" id="footerCol3Links">
+                            <li><a href="contact.html">联系方式</a></li>
+                        <li><a href="https://github.com/GUETCA" class="footer-github" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 桂林电子科技大学密码协会. All rights reserved.</p>
+                <p id="footerCopyright">&copy; 2025-2028 桂林电子科技大学密码协会. All rights reserved.</p>
             </div>
         </div>
     </footer>

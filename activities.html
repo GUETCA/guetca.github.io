@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活动天地 - 桂林电子科技大学密码协会</title>
+    <link rel="icon" href="static/guetca-logo.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -13,15 +14,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="static/guetca-logo.png" alt="GUETCA Logo">
-                    <span>GUETCA</span>
+                    <img src="static/guetca-title.png" alt="GUETCA Logo">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">首页</a></li>
                     <li><a href="about.html">关于我们</a></li>
                     <li><a href="activities.html" class="active">活动天地</a></li>
                     <li><a href="resources.html">学习资源</a></li>
-                    <li><a href="members.html">成员风采</a></li>
+                    <li><a href="members.html">会员风采</a></li>
                     <li><a href="join.html">加入我们</a></li>
                     <li><a href="contact.html">联系我们</a></li>
                 </ul>
@@ -47,26 +47,26 @@
         <section class="content-section section-white">
             <div class="container">
                 <h2 class="section-title">活动类型</h2>
-                <div class="activities-grid">
+                <div class="activities-grid" id="activitiesGrid">
+                    <div class="activity-card">
+                        <div class="activity-icon">🔐</div>
+                        <h3>学术研讨</h3>
+                        <p>前沿探讨，理论深耕</p>
+                    </div>
                     <div class="activity-card">
                         <div class="activity-icon">📚</div>
-                        <h3>密码学讲座</h3>
-                        <p>邀请专业老师和优秀学长分享密码学前沿知识和实践经验</p>
+                        <h3>专题培训</h3>
+                        <p>技能精进，实战赋能</p>
                     </div>
                     <div class="activity-card">
-                        <div class="activity-icon">🏆</div>
-                        <h3>CTF竞赛</h3>
-                        <p>组织参加各类网络安全竞赛，提升实战能力</p>
-                    </div>
-                    <div class="activity-card">
-                        <div class="activity-icon">💡</div>
-                        <h3>学术沙龙</h3>
-                        <p>自由交流学习心得，共同探讨密码学难题</p>
+                        <div class="activity-icon">🎮</div>
+                        <h3>竞赛实践</h3>
+                        <p>以赛促学，锤炼真知</p>
                     </div>
                     <div class="activity-card">
                         <div class="activity-icon">🤝</div>
-                        <h3>校际交流</h3>
-                        <p>与其他高校相关社团建立联系，开展交流合作</p>
+                        <h3>学习交流</h3>
+                        <p>共享共进，碰撞火花</p>
                     </div>
                 </div>
             </div>
@@ -76,47 +76,52 @@
         <section class="content-section section-gray">
             <div class="container">
                 <h2 class="section-title">活动回顾</h2>
-                <div class="timeline">
+                <div class="timeline" id="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">2025年3月20日</div>
-                        <h3 class="timeline-title">密码学入门系列讲座第三期</h3>
-                        <p class="timeline-desc">本期讲座深入探讨公钥密码学体系及其在现代通信中的应用，吸引了50余位同学参与。</p>
+                        <div class="timeline-date">2026年4月29日</div>
+                        <h3 class="timeline-title">四月汇报讨论会</h3>
+                        <p class="timeline-desc">成员们在分享与思辨中深化理解，推动知识落地</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2025年3月5日</div>
-                        <h3 class="timeline-title">CTF基础训练营开营</h3>
-                        <p class="timeline-desc">为期两周的CTF基础培训，涵盖Web安全、Reverse、Pwn等多个方向。</p>
+                        <div class="timeline-date">2026年3月27日</div>
+                        <h3 class="timeline-title">春季学术部特别招新</h3>
+                        <p class="timeline-desc">寻找与我们同行探索前沿的伙伴</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2025年2月28日</div>
-                        <h3 class="timeline-title">春季学期学术沙龙</h3>
-                        <p class="timeline-desc">新学期首次学术沙龙，成员们分享了寒假学习心得和未来学习计划。</p>
+                        <div class="timeline-date">2026年3月22日</div>
+                        <h3 class="timeline-title">三月学习交流会</h3>
+                        <p class="timeline-desc">聚焦前沿，以学促思，共同探索密码的深度与广度</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2025年1月15日</div>
-                        <h3 class="timeline-title">密码学讲座第二期圆满结束</h3>
-                        <p class="timeline-desc">讲座主题为对称密码学及其应用，参会同学收获颇丰。</p>
+                        <div class="timeline-date">2026年1月4日</div>
+                        <h3 class="timeline-title">2025年度总结会</h3>
+                        <p class="timeline-desc">总结会表彰优秀会员，规划新年度工作</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2024年12月20日</div>
-                        <h3 class="timeline-title">年终总结大会</h3>
-                        <p class="timeline-desc">回顾一年来的工作成果，表彰优秀成员，规划下一年度发展目标。</p>
+                        <div class="timeline-date">2025年12月14日</div>
+                        <h3 class="timeline-title">密码协会第一次汇报讨论</h3>
+                        <p class="timeline-desc">为会员搭建了深入交流、思想碰撞的宝贵平台</p>
+                    </div>
+                    <a href="https://www.guet.edu.cn/dept3/2025/1230/c2071a148075/page.htm" class="timeline-item" target="_blank">
+                        <div class="timeline-date">2025年12月7日</div>
+                        <h3 class="timeline-title">第六届超频链接杯</h3>
+                        <p class="timeline-desc">作为承办方之一共同见证了技术的火花碰撞</p>
+                    </a>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025年11月1日</div>
+                        <h3 class="timeline-title">密码协会第一次见面会</h3>
+                        <p class="timeline-desc">见面会的举办为同学们打开了一扇通往密码世界的大门</p>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-date">2024年12月10日</div>
-                        <h3 class="timeline-title">参加校级网络安全竞赛</h3>
-                        <p class="timeline-desc">协会组织两支队伍参赛，分别获得二等奖和三等奖的好成绩。</p>
+                        <div class="timeline-date">2025年10月23日</div>
+                        <h3 class="timeline-title">密码协会首次招新</h3>
+                        <p class="timeline-desc">首次招新吸引了众多对密码学感兴趣的伙伴加入探索之旅</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024年11月25日</div>
-                        <h3 class="timeline-title">密码学入门系列讲座第一期</h3>
-                        <p class="timeline-desc">协会首次正式讲座，介绍密码学基本概念和发展历史。</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">2024年11月15日</div>
-                        <h3 class="timeline-title">协会成立大会</h3>
-                        <p class="timeline-desc">桂林电子科技大学密码协会正式成立，标志着协会发展迈出重要一步。</p>
-                    </div>
+                    <a href="https://www.guet.edu.cn/tw/2025/1020/c396a143796/page.htm" class="timeline-item" target="_blank">
+                        <div class="timeline-date">2025年10月21日</div>
+                        <h3 class="timeline-title">密码协会协会成立</h3>
+                        <p class="timeline-desc">桂林电子科技大学密码协会正式成立</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -127,30 +132,34 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>关于协会</h4>
-                    <p>桂林电子科技大学密码协会</p>
-                    <p>计算机与信息安全学院</p>
-                    <p>学术科技类学生社团</p>
+                    <h4>快速链接</h4>
+                    <ul class="footer-links" id="footerCol1Links">
+                            <li><a href="index.html">桂林电子科技大学密码协会</a></li>
+                            <li><a href="https://www.guet.edu.cn/tw">共青团桂林电子科技大学委员会</a></li>
+                            <li><a href="https://www.guet.edu.cn/dept3">计算机与信息安全学院/密码学院</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>快速链接</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">关于我们</a></li>
-                        <li><a href="activities.html">活动天地</a></li>
-                        <li><a href="resources.html">学习资源</a></li>
-                        <li><a href="join.html">加入我们</a></li>
+                    <h4>关于协会</h4>
+                    <ul class="footer-links" id="footerCol2Links">
+                            <li><a href="activities.html">活动天地</a></li>
+                            <li><a href="resources.html">学习资源</a></li>
+                            <li><a href="members.html">会员风采</a></li>
+                            <li><a href="join.html">加入我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>联系我们</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">联系方式</a></li>
-                        <li><a href="https://guetca.github.io/" target="_blank">GitHub</a></li>
+                    <ul class="footer-links" id="footerCol3Links">
+                            <li><a href="contact.html">联系方式</a></li>
+                        <li><a href="https://github.com/GUETCA" class="footer-github" target="_blank">
+                            <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 4px;"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 桂林电子科技大学密码协会. All rights reserved.</p>
+                <p id="footerCopyright">&copy; 2025-2028 桂林电子科技大学密码协会. All rights reserved.</p>
             </div>
         </div>
     </footer>
